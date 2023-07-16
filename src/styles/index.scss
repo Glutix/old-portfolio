@@ -1,0 +1,8 @@
+//? setting general
+@import "./base/variables.scss";
+@import "./base/mixin.scss";
+
+//? components
+@import "./base/setting";
+@import "./components/navbar";
+@import "./components/about";

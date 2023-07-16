@@ -1,0 +1,18 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: $color-text;
+	font-family: $font-primary;
+	background-color: $color-primary;
+}
+
+//estilo de className
+/* form{
+
+  &-title
+  &-text
+} */
