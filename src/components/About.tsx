@@ -11,7 +11,7 @@ const About = () => {
 
 			<div className="about-conteiner-rigth">
 				<section className="about-conteiner-rigth-section">
-					<h1>¡Hola! Soy Ricardo Full Stack Developer</h1>
+					<h2>¡Hola! Soy Ricardo Full Stack Developer</h2>
 					<p>
 						con experiencia en la creación de aplicaciones web innovadoras y
 						escalables. Me especializo en el uso de TypeScript con React y
