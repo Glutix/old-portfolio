@@ -1,8 +1,15 @@
-//? setting general
+//! setting general
 @import "./base/variables.scss";
 @import "./base/mixin.scss";
-
-//? components
 @import "./base/setting";
+
+//! Components
+//? Navbar
 @import "./components/navbar";
+
+//? About
 @import "./components/about";
+
+//? Projects
+@import "./components/cards";
+@import "./components/card";

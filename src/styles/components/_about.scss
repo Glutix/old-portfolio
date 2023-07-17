@@ -23,48 +23,15 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			position: relative;
 			background-color: $color-secundary;
+			clip-path: polygon(0% 1%, 0% 99%, 100% 50%);
 
-			clip-path: polygon(1% 1%, 1% 99%, 100% 50%);
-		}
-
-		/* .triangle::before {
-			position: absolute;
-			content: "";
-			width: 150%;
-			height: 150%;
-			background-image: conic-gradient(
-				from -140deg at 50% 50%,
-				red 20deg,
-				transparent 120deg
-			);
-			animation: rotar 3s linear infinite;
-		}
-
-		@keyframes rotar {
-			from {
-				transform: rotate(0deg);
+			img {
+				width: 40%;
+				height: 40%;
+				border-radius: 50%;
+				margin-right: 2rem;
 			}
-			to {
-				transform: rotate(360deg);
-			}
-		}
-
-		.triangle::after {
-			content: "";
-			position: absolute;
-			width: 95%;
-			height: 95%;
-			background-color: $color-secundary;
-		} */
-
-		img {
-			display: none;
-			width: 25rem;
-			height: 25rem;
-			border-radius: 50%;
-			margin-right: 2rem;
 		}
 	}
 

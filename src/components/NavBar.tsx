@@ -5,8 +5,8 @@ const Navbar = () => {
 
 			<section className="nav-section">
 				<a href="">Inicio</a>
-				<a href="">Sobre mí</a>
 				<a href="">Skills</a>
+				<a href="">Projectos</a>
 				<a href="">Contáctame</a>
 			</section>
 		</div>
