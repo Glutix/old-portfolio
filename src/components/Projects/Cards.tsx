@@ -42,7 +42,7 @@ const Cards = () => {
 
 	return (
 		<div className="cards">
-			<h2> Projectos </h2>
+			<h2 id="projects"> Projectos </h2>
 
 			<div className="cards-slider">
 				<Slider {...settings}>
