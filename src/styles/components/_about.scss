@@ -13,7 +13,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 50%;
-		height: 80%;
+		height: 100%;
 		padding: 2rem;
 
 		.box {
@@ -75,17 +75,18 @@
 		align-items: center;
 		padding: 2rem;
 		width: 50%;
-		height: 80%;
+		height: 100%;
 		gap: 1rem;
 
 		.info-about {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			height: 60%;
+			min-height: calc(70% - 1rem);
 			width: 100%;
 			gap: 1rem;
 			padding: 1rem;
+			overflow-y: hidden;
 		}
 
 		.info-redes {
@@ -94,7 +95,7 @@
 			align-items: center;
 			gap: 1rem;
 			width: 100%;
-			height: 100%;
+			height: 30%;
 
 			.conteiner-icons {
 				display: flex;
@@ -105,6 +106,7 @@
 				border-radius: 2rem;
 				gap: 2rem;
 				background-color: $color-secundary;
+				box-shadow: 0px 0px 6px 1px $color-text-important;
 				.icon {
 					width: 2rem;
 					height: 2rem;
