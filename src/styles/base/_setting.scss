@@ -10,9 +10,13 @@ body {
 	background-color: $color-primary;
 }
 
-//estilo de className
-/* form{
+p {
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1.5rem;
+}
 
-  &-title
-  &-text
-} */
+h2 {
+	font-size: 2rem;
+	color: $color-text-important;
+}

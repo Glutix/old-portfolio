@@ -18,7 +18,7 @@ const Card: React.FC<ProjectProps> = (data) => {
 		return (
 			<>
 				<h3>{data.name}</h3>
-				<img src={data.image.link} alt={data.image.name} />
+				<img src={data.image.link} alt={data.image.name} loading="lazy" />
 			</>
 		);
 	};
@@ -31,11 +31,21 @@ const Card: React.FC<ProjectProps> = (data) => {
 				</section>
 				<section className="section-icon">
 					<a href={data.repository} target="_blank">
-						<img className="card-icon" src={gitHub} alt="icon-github" />
+						<img
+							className="card-icon"
+							src={gitHub}
+							alt="icon-github"
+							loading="lazy"
+						/>
 					</a>
 
 					<a href={data.demo} target="_blank">
-						<img className="card-icon" src={youtube} alt="icon-youtube" />
+						<img
+							className="card-icon"
+							src={youtube}
+							alt="icon-youtube"
+							loading="lazy"
+						/>
 					</a>
 				</section>
 			</>
