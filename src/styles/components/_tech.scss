@@ -1,0 +1,38 @@
+.tech {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	width: calc((100% * 0.3) - 2rem);
+	height: 8rem;
+
+	a {
+		text-decoration: none;
+		color: $color-text;
+		width: fit-content;
+		height: fit-content;
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			gap: 2rem;
+		}
+		.tech-icon {
+			width: 3rem;
+			height: 3rem;
+      transition: 300ms ease;
+		}
+	}
+
+	a:hover {
+		color: $color-text-important;
+
+		.tech-icon {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+}
