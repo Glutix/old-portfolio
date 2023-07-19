@@ -25,7 +25,13 @@
 
 	.section-text {
 		width: 100%;
-		height: 80%;
+		height: calc(100% - 3rem);
+		padding: 1rem;
+		p {
+			overflow-y: auto;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	.section-icon {
@@ -34,7 +40,7 @@
 		align-items: center;
 		gap: 2rem;
 		width: 100%;
-		height: 20%;
+		min-height: 2.5rem;
 		background-color: $color-card-one;
 		border-radius: 2rem;
 	}
