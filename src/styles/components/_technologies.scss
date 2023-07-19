@@ -18,3 +18,15 @@
 		padding: 2rem;
 	}
 }
+
+@media screen and (max-width: 530px) {
+	.technologies {
+		padding: 0;
+		gap: 1rem;
+		padding-bottom: 2rem;
+
+		&-conteiner {
+			gap: 1.5rem;
+		}
+	}
+}

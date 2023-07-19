@@ -2,6 +2,11 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -14,6 +19,25 @@ p {
 	font-weight: 500;
 	letter-spacing: 1px;
 	line-height: 1.5rem;
+}
+
+p {
+	scrollbar-width: thin;
+	//scrollbar-color: $color-secundary $color-primary;
+}
+
+p::-webkit-scrollbar {
+	width: 10px;
+}
+
+p::-webkit-scrollbar-thumb {
+	background-color: $color-text-important;
+	border-radius: 2rem;
+}
+
+p::-webkit-scrollbar-track {
+	background-color: white;
+	border-radius: 2rem;
 }
 
 label {
