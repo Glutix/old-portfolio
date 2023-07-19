@@ -7,11 +7,14 @@ import Slider from "react-slick";
 const Cards = () => {
 	const settings = {
 		dots: true,
-		infinite: false,
+		infinite: true,
 		speed: 500,
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		initialSlide: 0,
+		className: "cards-slider",
+		adaptiveHeight: true,
+		accessibility: true,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -23,18 +26,11 @@ const Cards = () => {
 				},
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 650,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					initialSlide: 1,
-				},
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
 				},
 			},
 		],

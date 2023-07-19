@@ -90,6 +90,31 @@
 			}
 		}
 
+		button {
+			width: fit-content;
+			height: fit-content;
+			padding: 1rem;
+			border-radius: 1rem;
+			background-color: $color-text-important;
+			color: black;
+			transition: 1s ease;
+			border: 1px solid transparent;
+			box-shadow: 0px 0px 8px 1px transparent;
+			font-weight: 500;
+			letter-spacing: 1px;
+			cursor: pointer;
+			padding: 0.5rem;
+			width: 6rem;
+			height: 2rem;
+		}
+
+		button:hover {
+			background-color: $color-text-important;
+			border: 1px solid white;
+			box-shadow: 0px 0px 8px 1px white;
+			color: black;
+		}
+
 		.info-redes {
 			display: flex;
 			flex-direction: column;
@@ -216,7 +241,6 @@
 				overflow-y: auto;
 				padding: 1rem;
 			}
-
 		}
 
 		.info-redes {
@@ -225,7 +249,6 @@
 				width: calc(3.5rem * 4);
 				height: 3.5rem;
 				border-radius: 2rem;
-				
 
 				a {
 					width: 1.5rem;

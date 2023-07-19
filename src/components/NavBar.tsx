@@ -1,24 +1,46 @@
-const Navbar = () => {
+import { useState } from "react";
+
+const NavBar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	document.body.style.overflow = !isOpen ? "auto" : "hidden";
+
+	const handleClick = () => {
+		setIsOpen(!isOpen);
+	};
+
+	const handleAncor = () => {
+		setIsOpen(false);
+	};
+
 	return (
 		<div className="nav-conteiner">
-			<h1 className="nav-title"> Ferreyra</h1>
+			<h2 className="logoText">Ferreyra</h2>
 
-			<section className="nav-section">
-				<a href="#">
-					<p>Inicio</p>
+			<div className={`nav-section ${isOpen && "nav-section-open"}`}>
+				<a href="#" className="link" onClick={handleAncor}>
+					Inicio
 				</a>
-				<a href="#projects">
-					<p>Projectos</p>
+				<a href="#projects" className="link" onClick={handleAncor}>
+					Projectos
 				</a>
-				<a href="#skills">
-					<p>Habilidades</p>
+				<a href="#skills" className="link" onClick={handleAncor}>
+					Habilidades
 				</a>
-				<a href="#contact">
-					<p>Contáctame</p>
+				<a href="#contact" className="link" onClick={handleAncor}>
+					Conctacto
 				</a>
-			</section>
+			</div>
+
+			<div
+				className={`toggle ${isOpen && "toggleSpanOpen"}`}
+				onClick={handleClick}
+			>
+				<span className={`span ${isOpen && "s1"}`}></span>
+				<span className={`span ${isOpen && "s2"}`}></span>
+				<span className={`span ${isOpen && "s3"}`}></span>
+			</div>
 		</div>
 	);
 };
 
-export default Navbar;
+export default NavBar;

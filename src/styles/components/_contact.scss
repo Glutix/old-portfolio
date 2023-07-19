@@ -83,9 +83,25 @@
 					height: 2rem;
 
 					button {
-						display: flex;
-						height: inherit;
-						align-items: center;
+						width: fit-content;
+						height: fit-content;
+						padding: 1rem;
+						border-radius: 1rem;
+						background-color: $color-text-important;
+						color: black;
+						transition: 1s ease;
+						border: 1px solid transparent;
+						box-shadow: 0px 0px 8px 1px transparent;
+						font-weight: 500;
+						letter-spacing: 1px;
+						cursor: pointer;
+					}
+
+					button:hover {
+						background-color: $color-text-important;
+						border: 1px solid white;
+						box-shadow: 0px 0px 8px 1px white;
+						color: black;
 					}
 				}
 			}
@@ -218,7 +234,6 @@
 					height: 25rem;
 					border-radius: 2rem;
 					padding: 2rem;
-
 
 					h3 {
 						color: $color-text-important;
