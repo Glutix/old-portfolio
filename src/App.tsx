@@ -12,6 +12,7 @@ function App() {
 			<Cards />
 			<Technologies />
 			<Contact />
+
 		</div>
 	);
 }

@@ -1,6 +1,8 @@
 import gluti from "../assets/Gluti.jpg";
 import gitHub from "../assets/icons/github.svg";
 import linkedin from "../assets/icons/linkedin.svg";
+import instagram from "../assets/icons/instagram.svg";
+import twitter from "../assets/icons/twitter.svg";
 
 const About = () => {
 	return (
@@ -30,6 +32,15 @@ const About = () => {
 					</p>
 				</section>
 
+				<a
+					href="https://drive.google.com/file/d/1GpHwmeETA2NFM6fUr6x7Tf5Ilm_xNdrc/view?usp=sharing"
+					target="_blank"
+					rel="noopener noreferrer"
+					download
+				>
+					<button>Curriculum</button>
+				</a>
+
 				<section className="info-redes">
 					<h2>Redes Sociales</h2>
 					<div className="conteiner-icons">
@@ -50,6 +61,24 @@ const About = () => {
 								className="icon"
 								src={linkedin}
 								alt="icon-linkedin"
+								loading="lazy"
+							/>
+						</a>
+
+						<a href="https://twitter.com/Glutix_32" target="_blank">
+							<img
+								className="icon"
+								src={twitter}
+								alt="icon-twitter"
+								loading="lazy"
+							/>
+						</a>
+
+						<a href="https://www.instagram.com/glutinose/" target="_blank">
+							<img
+								className="icon"
+								src={instagram}
+								alt="icon-instagram"
 								loading="lazy"
 							/>
 						</a>

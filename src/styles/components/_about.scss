@@ -4,8 +4,6 @@
 	align-items: center;
 	height: calc(100vh - 3rem);
 	width: 100%;
-	gap: 1rem;
-	padding: 1rem;
 
 	//? lado izquierdo
 	&-conteiner-card {
@@ -14,7 +12,7 @@
 		align-items: center;
 		width: 50%;
 		height: 100%;
-		padding: 2rem;
+		padding: 1rem;
 
 		.box {
 			display: flex;
@@ -22,9 +20,12 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			gap: 2rem;
-			width: 100%;
-			height: 100%;
+			text-align: center;
+			padding: 3rem;
+			gap: 3rem;
+			width: 90%;
+			min-height: 80%;
+			max-height: 90%;
 			overflow: hidden;
 			border-radius: 2rem;
 			background-color: $color-secundary;
@@ -72,21 +73,34 @@
 	&-conteiner-info {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		padding: 2rem;
 		width: 50%;
 		height: 100%;
+		padding: 1rem;
 		gap: 1rem;
 
 		.info-about {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			min-height: calc(70% - 1rem);
 			width: 100%;
+			max-height: 60%;
 			gap: 1rem;
 			padding: 1rem;
 			overflow-y: hidden;
+		}
+
+		.info-cv {
+			display: flex;
+			justify-content: center;
+			text-decoration: none;
+			border-radius: 2rem;
+			color: white;
+			align-items: center;
+			background-color: $color-card-one;
+			width: 30%;
+			height: 3rem;
 		}
 
 		.info-redes {
@@ -95,16 +109,16 @@
 			align-items: center;
 			gap: 1rem;
 			width: 100%;
-			height: 30%;
+			padding: 1rem;
 
 			.conteiner-icons {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 13rem;
-				height: 4rem;
+				width: calc(4rem * 4);
+				height: 3rem;
 				border-radius: 2rem;
-				gap: 2rem;
+				gap: 1rem;
 				background-color: $color-card-one;
 
 				a {
