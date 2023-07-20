@@ -4,14 +4,14 @@ import gitHub from "../../assets/icons/github.svg";
 import youtube from "../../assets/icons/youtube.svg";
 
 const Card: React.FC<ProjectProps> = (data) => {
-	const [isHovered, setIsHovered] = useState(false);
+	const [isTouched, setIsTouched] = useState(false);
 
-	const handleMouseEnter = () => {
-		setIsHovered(true);
+	const handleTouchStart = () => {
+		setIsTouched(true);
 	};
 
-	const handleMouseLeave = () => {
-		setIsHovered(false);
+	const handleTouchEnd = () => {
+		setIsTouched(false);
 	};
 
 	const normalRender = () => {
@@ -54,11 +54,13 @@ const Card: React.FC<ProjectProps> = (data) => {
 
 	return (
 		<div
-			className="card"
-			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}
+			className={`card ${isTouched ? "hovered" : ""}`}
+			onMouseEnter={handleTouchStart}
+			onMouseLeave={handleTouchEnd}
+			onTouchStart={handleTouchStart}
+			onTouchEnd={handleTouchEnd}
 		>
-			{!isHovered ? normalRender() : hoverRender()}
+			{!isTouched ? normalRender() : hoverRender()}
 		</div>
 	);
 };

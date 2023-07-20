@@ -20,7 +20,7 @@
 	}
 }
 
-.card:hover {
+.card.hovered {
 	background-color: $color-secundary;
 
 	.section-text {
