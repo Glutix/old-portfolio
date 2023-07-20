@@ -7,6 +7,26 @@ export interface ProjectProps {
 	demo: string;
 }
 
+export interface FormData {
+	user_name: string;
+	user_email: string;
+	message: string;
+}
+
+export interface ErrorformData {
+	user_name?: string | null;
+	user_email?: string | null;
+	message?: string | null;
+}
+
+export interface PropsErrorMessage {
+	required: string;
+	maxLongName: string;
+	maxLongText: string;
+	minLongText: string;
+	invalidEmail: string;
+}
+
 export interface TechProps {
 	name: string;
 	image: string;

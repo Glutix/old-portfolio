@@ -7,8 +7,8 @@ const Technologies = () => {
 		<div className="technologies">
 			<h2 id="skills">Tecnologias</h2>
 			<div className="technologies-conteiner">
-				{data.map((tech: TechProps) => {
-					return <Tech {...tech} />;
+				{data.map((tech: TechProps, index) => {
+					return <Tech key={index} {...tech} />;
 				})}
 			</div>
 		</div>

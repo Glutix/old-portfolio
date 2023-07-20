@@ -9,6 +9,10 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: $color-text;
 	font-family: $font-primary;
@@ -56,8 +60,6 @@ h2 {
 	font-size: 2rem;
 	color: $color-text-important;
 }
-
-
 
 @media screen and (max-width: 850px) {
 	h2 {

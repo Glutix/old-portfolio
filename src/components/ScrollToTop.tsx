@@ -12,12 +12,10 @@ const ScrollToTop: React.FC = () => {
 	};
 
 	const scrollToTop = () => {
-		setTimeout(() => {
-			window.scrollTo({
-				top: 0,
-				behavior: "smooth",
-			});
-		}, 100);
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
 	};
 
 	useEffect(() => {
@@ -33,7 +31,7 @@ const ScrollToTop: React.FC = () => {
 			className={`scroll-to-top ${isVisible ? "visible" : ""}`}
 			onClick={scrollToTop}
 		>
-			<img src={arrow} alt="icon-arrow" />
+			<img src={arrow} alt="icon-arrow" loading="lazy" />
 		</button>
 	);
 };
