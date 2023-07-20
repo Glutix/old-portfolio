@@ -27,12 +27,14 @@ const ScrollToTop: React.FC = () => {
 	}, []);
 
 	return (
-		<button
-			className={`scroll-to-top ${isVisible ? "visible" : ""}`}
-			onClick={scrollToTop}
-		>
-			<img src={arrow} alt="icon-arrow" loading="lazy" />
-		</button>
+		<div className="scroll-conteiner">
+			<button
+				className={`scroll-to-top ${isVisible ? "visible" : ""}`}
+				onClick={scrollToTop}
+			>
+				<img src={arrow} alt="icon-arrow" loading="lazy" />
+			</button>
+		</div>
 	);
 };
 

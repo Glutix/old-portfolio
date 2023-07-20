@@ -8,8 +8,9 @@ const About = () => {
 	return (
 		<div className="about">
 			<div className="about-conteiner-card">
-				<div className="box">
+				<div className="box" data-aos="zoom-in-right">
 					<h2>Ferreyra Ricardo</h2>
+
 					<img
 						src={gluti}
 						alt="Foto de perfil"
@@ -21,7 +22,7 @@ const About = () => {
 				</div>
 			</div>
 
-			<div className="about-conteiner-info">
+			<div className="about-conteiner-info" data-aos="fade-left">
 				<section className="info-about">
 					<h2>Sobre mí</h2>
 					<p>

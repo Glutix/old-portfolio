@@ -4,6 +4,12 @@ import Cards from "./components/Projects/Cards";
 import Technologies from "./components/Technologies/Technologies";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init({
+	duration: 1000,
+});
 
 function App() {
 	return (

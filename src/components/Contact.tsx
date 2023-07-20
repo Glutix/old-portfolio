@@ -11,6 +11,7 @@ import whatsapp from "../assets/icons/whatsapp-icon.svg";
 import meet from "../assets/icons/google-meet.svg";
 import validate from "../utils/validate";
 import { FormData, ErrorformData } from "../utils/interfaces";
+import Swal from "sweetalert2";
 
 const Contact: React.FC = () => {
 	const form = useRef<HTMLFormElement>(null);
@@ -50,16 +51,38 @@ const Contact: React.FC = () => {
 				)
 				.then(
 					(_result: EmailJSResponseStatus) => {
+						Swal.fire({
+							position: "center",
+							icon: "success",
+							title: "Mensaje enviado correctamente",
+							showConfirmButton: false,
+							text: "¡Gracias por tu mensaje! Estaré atento para responder lo que necesites. ¡Hasta pronto! 😊",
+						});
+
 						setFormData({
 							user_name: "",
 							user_email: "",
 							message: "",
 						});
-						setErrors({});
-						alert("Mensaje enviado correctamente.");
+						setErrors({
+							user_name: null,
+							user_email: null,
+							message: null,
+						});
+
+						const formIsValid = Object.values(errors).every(
+							(error) => error === ""
+						);
+						setIsValid(formIsValid);
 					},
 					(_error) => {
-						alert("Ha ocurrido un error.");
+						Swal.fire({
+							position: "center",
+							icon: "error",
+							title: "Ha ocurrido un error inesperado",
+							showConfirmButton: false,
+							text: "Ups, parece que algo salió mal. Por favor, intenta enviar tu mensaje a través de otro medio de comunicación. 😔",
+						});
 					}
 				);
 		}
@@ -84,7 +107,12 @@ const Contact: React.FC = () => {
 			<h2 id="contact">Contáctame</h2>
 			<div className="contact-conteiner">
 				<form ref={form} onSubmit={sendEmail} className="form">
-					<div className="contact-form">
+					<div
+						className="contact-form"
+						data-aos="fade-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+					>
 						<section className="contact-form-section">
 							<label>Nombre</label>
 							<input
@@ -147,7 +175,12 @@ const Contact: React.FC = () => {
 					</div>
 				</form>
 
-				<div className="contact-plus">
+				<div
+					className="contact-plus"
+					data-aos="flip-down"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+				>
 					<article className="contact-plus-info">
 						<section>
 							<h3>Chateá conmigo</h3>

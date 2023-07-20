@@ -44,7 +44,13 @@ const Cards = () => {
 				<Slider {...settings}>
 					{data.map((element, index) => {
 						return (
-							<div className="cards-conteiner" key={index}>
+							<div
+								className="cards-conteiner"
+								key={index}
+								data-aos="flip-right"
+								data-aos-easing="ease-out-cubic"
+								data-aos-duration="1500"
+							>
 								<Card {...element} />
 							</div>
 						);
