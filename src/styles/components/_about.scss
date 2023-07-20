@@ -192,7 +192,7 @@
 		}
 
 		.info-about {
-			max-height: 14.5rem;
+			max-height: fit-content;
 			gap: 1rem;
 			p {
 				overflow-y: auto;

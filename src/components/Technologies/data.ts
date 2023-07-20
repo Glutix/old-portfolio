@@ -33,7 +33,7 @@ const data: Tech = [
 	{ name: "React", image: react, url: "https://es.react.dev/" },
 	{ name: "Redux", image: redux, url: "https://redux.js.org/" },
 	{ name: "JSON Web Token", image: jwt, url: "https://jwt.io/" },
-	{ name: "Sequalize", image: sequalize, url: "https://sequelize.org/" },
+	{ name: "Sequelize", image: sequalize, url: "https://sequelize.org/" },
 	{ name: "Git", image: git, url: "https://git-scm.com/" },
 	{ name: "GitHub", image: github, url: "https://github.com/" },
 	{

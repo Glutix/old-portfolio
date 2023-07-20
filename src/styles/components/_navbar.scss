@@ -21,6 +21,7 @@
 		padding-right: 1rem;
 		.link {
 			text-decoration: none;
+			letter-spacing: 1px;
 			color: $color-text;
 			border-bottom: 1px $color-primary solid;
 			&:hover {

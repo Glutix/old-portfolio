@@ -5,7 +5,7 @@ import Tech from "../Technologies/Tech";
 const Technologies = () => {
 	return (
 		<div className="technologies">
-			<h2 id="skills">Tecnologias</h2>
+			<h2 id="skills">Tecnologías</h2>
 			<div className="technologies-conteiner">
 				{data.map((tech: TechProps, index) => {
 					return <Tech key={index} {...tech} />;

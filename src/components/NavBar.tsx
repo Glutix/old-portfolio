@@ -21,13 +21,13 @@ const NavBar = () => {
 					Inicio
 				</a>
 				<a href="#projects" className="link" onClick={handleAncor}>
-					Projectos
+					Proyectos
 				</a>
 				<a href="#skills" className="link" onClick={handleAncor}>
 					Habilidades
 				</a>
 				<a href="#contact" className="link" onClick={handleAncor}>
-					Conctacto
+					Contacto
 				</a>
 			</div>
 
