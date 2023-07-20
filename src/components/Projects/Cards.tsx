@@ -38,7 +38,7 @@ const Cards = () => {
 
 	return (
 		<div className="cards">
-			<h2 id="projects"> Projectos </h2>
+			<h2 id="projects"> Proyectos </h2>
 
 			<div className="cards-slider">
 				<Slider {...settings}>
