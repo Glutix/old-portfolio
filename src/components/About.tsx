@@ -34,7 +34,7 @@ const About = () => {
 				</section>
 
 				<a
-					href="https://drive.google.com/file/d/1GpHwmeETA2NFM6fUr6x7Tf5Ilm_xNdrc/view?usp=sharing"
+					href="https://drive.google.com/file/d/1fDr3h5t0QLQrNfa3_w-lsA5UeRElE_1f/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 					download
