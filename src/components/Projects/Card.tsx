@@ -16,16 +16,16 @@ const Card: React.FC<ProjectProps> = (data) => {
 
 	const normalRender = () => {
 		return (
-			<>
+			<div className="normal-render">
 				<h3>{data.name}</h3>
 				<img src={data.image.link} alt={data.image.name} loading="lazy" />
-			</>
+			</div>
 		);
 	};
 
 	const hoverRender = () => {
 		return (
-			<>
+			<div className="hovered-render">
 				<section className="section-text">
 					<p>{data.description}</p>
 				</section>
@@ -48,13 +48,13 @@ const Card: React.FC<ProjectProps> = (data) => {
 						/>
 					</a>
 				</section>
-			</>
+			</div>
 		);
 	};
 
 	return (
 		<div
-			className={`card ${isTouched ? "hovered" : ""}`}
+			className="card"
 			onMouseEnter={handleTouchStart}
 			onMouseLeave={handleTouchEnd}
 			onTouchStart={handleTouchStart}

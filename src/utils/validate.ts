@@ -1,11 +1,11 @@
 import { FormData, PropsErrorMessage, ErrorformData } from "./interfaces";
 
 const errorMessage: PropsErrorMessage = {
-	required: "Este campo es requerido",
+	required: "Este campo es obligatorio",
 	maxLongName: "(Max: 35 caracteres)",
 	maxLongText: "(Max: 500 caracteres)",
-	minLongText: "(Min: 35 caracteres)",
-	invalidEmail: "Ingrese un email valido",
+	minLongText: "(Min: 10 caracteres)",
+	invalidEmail: "Ingrese un email válido",
 };
 
 const regexEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
