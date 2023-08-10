@@ -11,12 +11,7 @@ const About = () => {
 				<div className="box" data-aos="zoom-in-right">
 					<h2>Ferreyra Ricardo</h2>
 
-					<img
-						src={gluti}
-						alt="Foto de perfil"
-						loading="lazy"
-						className="box-image-profile"
-					/>
+					<img src={gluti} alt="Foto de perfil" className="box-image-profile" />
 
 					<h2>Full Stack Developer</h2>
 				</div>
@@ -46,33 +41,18 @@ const About = () => {
 					<h2>Redes Sociales</h2>
 					<div className="conteiner-icons">
 						<a href="https://github.com/Glutix" target="_blank">
-							<img
-								className="icon"
-								src={gitHub}
-								alt="icon-gitHub"
-								loading="lazy"
-							/>
+							<img className="icon" src={gitHub} alt="icon-gitHub" />
 						</a>
 
 						<a
 							href="https://www.linkedin.com/in/ricardo-ferreyra/"
 							target="_blank"
 						>
-							<img
-								className="icon"
-								src={linkedin}
-								alt="icon-linkedin"
-								loading="lazy"
-							/>
+							<img className="icon" src={linkedin} alt="icon-linkedin" />
 						</a>
 
 						<a href="https://twitter.com/Glutix_32" target="_blank">
-							<img
-								className="icon"
-								src={twitter}
-								alt="icon-twitter"
-								loading="lazy"
-							/>
+							<img className="icon" src={twitter} alt="icon-twitter" />
 						</a>
 
 						<a href="https://www.instagram.com/glutinose/" target="_blank">

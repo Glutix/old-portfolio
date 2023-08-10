@@ -3,6 +3,7 @@ import facilMarket from "../../assets/Projects/FacilMarket.png";
 import videoGame from "../../assets/Projects/VideoGame.png";
 import rickAndMorty from "../../assets/Projects/Rick&Morty.png";
 import portfolio from "../../assets/Projects/portfolio.png";
+import altoNorte from "../../assets/Projects/Quincho_Alto_Norte.png";
 
 const data: Project = [
 	{
@@ -12,6 +13,14 @@ const data: Project = [
 		description:
 			"Facil Market es una aplicación web robusta y versátil que brinda a los usuarios la posibilidad de realizar compras y ventas de productos.",
 		demo: "https://www.youtube.com/watch?v=XQNHgjvIK84",
+	},
+	{
+		name: "Quincho Alto Norte",
+		image: { link: `${altoNorte}`, name: "Projecto-image: Quincho Alto Norte" },
+		repository: "https://github.com/Glutix/Quincho",
+		description:
+			"Quincho Alto Norte representa una página única (Single Page) creada con el propósito de destacar y dar visibilidad a los servicios de un negocio familiar.",
+		demo: "https://youtu.be/wkmN2-i83XQ",
 	},
 	{
 		name: "Video Games",

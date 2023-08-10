@@ -16,7 +16,7 @@ const NavBar = () => {
 		<div className="nav-conteiner">
 			<h2 className="logoText">Ferreyra</h2>
 
-			<div className={`nav-section ${isOpen && "nav-section-open"} >`}>
+			<div className={`nav-section ${isOpen && "nav-section-open"}`}>
 				<a href="#" className="link" onClick={handleAncor}>
 					Inicio
 				</a>
