@@ -2,7 +2,6 @@ import { Project } from "../../utils/interfaces";
 import facilMarket from "../../assets/Projects/FacilMarket.png";
 import videoGame from "../../assets/Projects/VideoGame.png";
 import rickAndMorty from "../../assets/Projects/Rick&Morty.png";
-import portfolio from "../../assets/Projects/portfolio.png";
 import altoNorte from "../../assets/Projects/Quincho_Alto_Norte.png";
 
 const data: Project = [
