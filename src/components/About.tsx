@@ -38,7 +38,7 @@ const About = () => {
           rel="noopener noreferrer"
           download
         >
-          <button>Curriculum</button>
+          <button>Descargar CV</button>
         </a>
 
         <section className="info-redes">
