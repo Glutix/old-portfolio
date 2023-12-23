@@ -15,7 +15,9 @@ const NavBar = () => {
 
   return (
     <div className="nav-conteiner">
-      <img className="logo" src={logo} />
+      <section className="logo">
+        <img src={logo} />
+      </section>
 
       <div className={`nav-section ${isOpen && "nav-section-open"}`}>
         <a href="#" className="link" onClick={handleAncor}>
