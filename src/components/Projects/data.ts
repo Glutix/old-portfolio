@@ -31,7 +31,6 @@ const data: Project = [
 		demo: "https://youtu.be/ElpsvsyY05M",
 	},
 
-
 	{
 		name: "Ricky and Morty",
 		image: { link: `${rickAndMorty}`, name: "Projecto-image: Rick and Morty" },
