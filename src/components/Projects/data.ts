@@ -31,14 +31,6 @@ const data: Project = [
 		demo: "https://youtu.be/ElpsvsyY05M",
 	},
 
-	/* 	{
-			name: "Portfolio",
-			image: { link: `${portfolio}`, name: "Projecto-image: Portfolio" },
-			repository: "https://github.com/Glutix/Portfolio",
-			description:
-				"¡Este es mi primer portfolio creado como carta de presentación y con fines educativos!",
-			demo: "https://youtu.be/0-SaPIByhsM",
-		}, */
 
 	{
 		name: "Ricky and Morty",
